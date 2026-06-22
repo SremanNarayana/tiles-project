@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base ────────────────────────────────────────────────────────── */
+@layer base {
+  html {
+    overscroll-behavior: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;          /* never allow sideways scroll on mobile */
+  }
+
+  body {
+    @apply font-sans;
+    background: #010810;
+    color: #E8F4FB;
+    overscroll-behavior: none;
+    overflow-x: clip;          /* belt-and-braces horizontal clamp */
+    max-width: 100%;
+  }
+
+  /* Media never forces the page wider than the screen */
+  img, video, svg, canvas {
+    max-width: 100%;
+  }
+
+  h1, h2, h3 { @apply font-display tracking-wide; }
+  h4, h5, h6 { @apply font-serif; }
+}
+
+/* ── Components ──────────────────────────────────────────────────── */
+@layer components {
+  /* Every section is a glass panel floating over the ocean canvas */
+  .ocean-section {
+    position: relative;
+    z-index: 1;
+    background: rgba(1, 8, 16, 0.72);
+  }
+
+  .section-label {
+    @apply text-xs font-bold tracking-[0.3em] uppercase;
+    color: #22D3EE;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-display leading-tight;
+    color: #ffffff;
+  }
+
+  .section-subtitle {
+    @apply text-base md:text-lg leading-relaxed font-serif;
+    color: rgba(184, 214, 238, 0.72);
+  }
+
+  .gold-line {
+    @apply w-12 h-0.5 rounded-full;
+    background: linear-gradient(90deg, #C09B52, #E8C97A, #C09B52);
+  }
+
+  .cyan-line {
+    @apply w-12 h-0.5 rounded-full;
+    background: linear-gradient(90deg, #06B6D4, #22D3EE, #06B6D4);
+  }
+
+  /* Gold CTA button */
+  .btn-gold {
+    @apply inline-flex items-center gap-2 font-semibold px-7 py-3.5 rounded-full;
+    background: linear-gradient(135deg, #C09B52, #E8C97A, #A67C35);
+    color: #010810;
+    box-shadow: 0 4px 20px rgba(192,155,82,0.40), 0 1px 0 rgba(255,255,255,0.15) inset;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .btn-gold:hover {
+    box-shadow: 0 8px 36px rgba(192,155,82,0.55);
+    transform: translateY(-2px);
+  }
+
+  /* Ocean glass card */
+  .ocean-card {
+    background: rgba(8,20,42,0.55);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow:
+      0 4px 24px rgba(1,8,16,0.55),
+      inset 0 1px 0 rgba(255,255,255,0.07);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease, border-color 0.35s ease;
+  }
+  .ocean-card:hover {
+    background: rgba(255,255,255,0.07);
+    border-color: rgba(6,182,212,0.22);
+    box-shadow:
+      0 8px 40px rgba(1,8,16,0.65),
+      0 0 0 1px rgba(6,182,212,0.12),
+      inset 0 1px 0 rgba(255,255,255,0.10);
+    transform: translateY(-4px);
+  }
+
+  .card {
+    @apply rounded-2xl overflow-hidden;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 4px 24px rgba(1,8,16,0.4);
+  }
+
+  /* Frosted glass panel — wraps each section's content so the ocean
+     shows around the edges (no backdrop-filter, so it stays smooth). */
+  .glass-card {
+    position: relative;
+    background: rgba(4,18,40,0.82);
+    border: 1px solid rgba(6,182,212,0.12);
+    box-shadow: 0 8px 48px rgba(1,8,16,0.7);
+    border-radius: 1.5rem;
+  }
+  /* Cyan top-edge shimmer on every glass panel */
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 10%; right: 10%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(6,182,212,0.45), transparent);
+    border-radius: 2px;
+  }
+
+  .perspective-wrap {
+    perspective: 1400px;
+    perspective-origin: 50% 40%;
+  }
+}
+
+/* ── Utilities ───────────────────────────────────────────────────── */
+@layer utilities {
+  .animate-scroll-x { animation: scroll-x 35s linear infinite; }
+
+  .text-gold-gradient {
+    @apply text-transparent bg-clip-text;
+    background-image: linear-gradient(135deg, #C09B52 0%, #E8C97A 50%, #A67C35 100%);
+  }
+
+  .text-cyan-gradient {
+    @apply text-transparent bg-clip-text;
+    background-image: linear-gradient(135deg, #22D3EE 0%, #67E8F9 50%, #06B6D4 100%);
+  }
+
+  .bg-gold-gradient { background-image: linear-gradient(135deg, #C09B52 0%, #E8C97A 50%, #A67C35 100%); }
+
+  .section-spacing { @apply py-16 px-4 sm:px-6 lg:py-28 lg:px-8; }
+  .will-change-transform { will-change: transform; }
+  .preserve-3d { transform-style: preserve-3d; }
+}
+
+/* ── Keyframes ───────────────────────────────────────────────────── */
+@keyframes scroll-x {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes ping {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.6; }
+}
+
+@keyframes bubble-rise {
+  0%   { transform: translateY(0px) scale(0.6); opacity: 0; }
+  20%  { opacity: 0.7; }
+  80%  { opacity: 0.5; }
+  100% { transform: translateY(-180px) scale(1.1); opacity: 0; }
+}
+
+.animate-pulse-soft { animation: pulse-soft 3s ease-in-out infinite; }
+.animate-bubble     { animation: bubble-rise 5s ease-in-out infinite; }
+.animate-bubble-alt { animation: bubble-rise 7s ease-in-out infinite 2.5s; }
+
+/* ── Glass utilities ─────────────────────────────────────────────── */
+.glass-panel {
+  background: rgba(6, 18, 40, 0.60);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.10),
+    0 4px 32px rgba(1,8,16,0.55);
+  border: 1px solid rgba(6,182,212,0.12);
+}
+
+/* Depth shadow */
+.shadow-depth {
+  box-shadow:
+    0 2px 8px rgba(1,8,16,0.3),
+    0 8px 24px rgba(1,8,16,0.4),
+    0 20px 48px rgba(1,8,16,0.3);
+  transition: box-shadow 0.35s ease;
+}
+.shadow-depth:hover {
+  box-shadow:
+    0 4px 16px rgba(1,8,16,0.4),
+    0 16px 48px rgba(1,8,16,0.5),
+    0 36px 80px rgba(1,8,16,0.35);
+}
+
+/* Cyan top-edge shimmer */
+.cyan-edge::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 8%; right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(6,182,212,0.5), transparent);
+}
+
+/* Gold top-edge shimmer */
+.gold-edge::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 8%; right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(192,155,82,0.5), transparent);
+}
+
+/* ── Lenis ───────────────────────────────────────────────────────── */
+html.lenis { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+.lenis.lenis-scrolling iframe { pointer-events: none; }
+
+/* ── Scrollbar ───────────────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: #010810; }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #06B6D4, #0891B2); border-radius: 4px; }
+
+/* ── Selection ───────────────────────────────────────────────────── */
+::selection {
+  background-color: rgba(6,182,212,0.28);
+  color: #ffffff;
+}
