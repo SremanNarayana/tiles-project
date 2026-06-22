@@ -1,25 +1,25 @@
-
-const OCEAN_VIDEOS = [
-  'https://assets.mixkit.co/videos/44392/44392-720.mp4', // ocean aerial
-  'https://assets.mixkit.co/videos/2091/2091-720.mp4',   // ocean waves crashing
-  'https://assets.mixkit.co/videos/9294/9294-720.mp4',   // sea waves on shore
-  'https://assets.mixkit.co/videos/15209/15209-720.mp4', // waves on beach
-  'https://assets.mixkit.co/videos/48525/48525-720.mp4', // ocean waves dark
-  'https://assets.mixkit.co/videos/17972/17972-720.mp4', // sea waves
-];
+/*
+  Ocean background — the exact turquoise aerial-ocean view from the reference.
+  Served from a LOCAL file (public/ocean-bg.mp4) so it always loads and never
+  falls back to a different clip. The poster (public/ocean-bg.jpg) paints
+  instantly and also covers browsers that block video autoplay.
+*/
 
 const OceanBackground = () => (
   <div style={{ position: 'fixed', inset: 0, zIndex: 0, pointerEvents: 'none', overflow: 'hidden' }}>
     <video
       style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+      poster="/ocean-bg.jpg"
       autoPlay
       loop
       muted
       playsInline
+      preload="auto"
     >
-      {OCEAN_VIDEOS.map((src, i) => (
-        <source key={i} src={src} type="video/mp4" />
-      ))}
+      {/* Local copy — primary */}
+      <source src="/ocean-bg.mp4" type="video/mp4" />
+      {/* Same exact clip, remote — only used if the local file is ever missing */}
+      <source src="https://assets.mixkit.co/videos/2091/2091-720.mp4" type="video/mp4" />
     </video>
 
     {/* Subtle dark vignette — keeps section text readable */}

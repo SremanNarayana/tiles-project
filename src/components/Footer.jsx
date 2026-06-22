@@ -1,6 +1,5 @@
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
-const FbIcon  = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>;
 const IgIcon  = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>;
 
 const Footer = ({ setActivePage }) => {
@@ -31,21 +30,14 @@ const Footer = ({ setActivePage }) => {
                 onError={(e) => { e.target.style.display = 'none'; }} />
               <div className="flex flex-col">
                 <span className="font-display text-base font-semibold tracking-wide" style={{ color: '#ffffff' }}>Sri Amman Tiles</span>
-                <span className="text-[9px] tracking-widest" style={{ color: 'rgba(6,182,212,0.45)' }}>MELUR · SINCE 2009</span>
+                <span className="text-[9px] tracking-widest" style={{ color: 'rgba(6,182,212,0.45)' }}>MELUR · SINCE 2011</span>
               </div>
             </button>
             <p className="text-sm leading-relaxed mb-5 font-sans" style={{ color: 'rgba(184,214,238,0.45)' }}>
               Melur's most trusted showroom for premium tiles, granite, and complete building materials. 15+ years of quality service.
             </p>
             <div className="flex gap-3">
-              <a href="#" aria-label="Facebook"
-                className="w-9 h-9 rounded-lg flex items-center justify-center transition-all duration-200"
-                style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', color: 'rgba(184,214,238,0.4)' }}
-                onMouseEnter={e => { e.currentTarget.style.background = '#1877F2'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = '#1877F2'; }}
-                onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.04)'; e.currentTarget.style.color = 'rgba(184,214,238,0.4)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'; }}>
-                <FbIcon />
-              </a>
-              <a href="#" aria-label="Instagram"
+              <a href="https://www.instagram.com/sri_amman_tiles/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
                 className="w-9 h-9 rounded-lg flex items-center justify-center transition-all duration-200"
                 style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', color: 'rgba(184,214,238,0.4)' }}
                 onMouseEnter={e => { e.currentTarget.style.background = 'linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = 'transparent'; }}
@@ -87,7 +79,7 @@ const Footer = ({ setActivePage }) => {
           <div>
             <h4 className="font-display text-base font-semibold mb-5" style={{ color: '#ffffff' }}>Products</h4>
             <ul className="space-y-2.5">
-              {['Premium Tiles', 'Granite & Kadappa', 'Sanitary Ware', 'Accessories'].map((p) => (
+              {['Premium Tiles', 'Granite & Kota Stones', 'Sanitary Ware', 'Accessories'].map((p) => (
                 <li key={p}>
                   <button
                     onClick={() => go('home', 'products')}

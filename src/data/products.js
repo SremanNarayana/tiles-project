@@ -15,13 +15,13 @@ export const CATEGORIES = [
     subcategories: ['All', 'Floor Tiles', 'Wall Tiles', 'Designer Tiles', 'Anti-Skid', 'Vitrified', 'Ceramic'],
   },
   {
-    slug: 'granite-kadappa',
-    label: 'Granite & Kadappa',
+    slug: 'granite-kota Stones',
+    label: 'Granite & Kota Stones',
     iconName: 'Mountain',
-    description: 'Natural granite slabs, kadappa stone, and engineered stone surfaces — direct from quarries at best prices.',
+    description: 'Natural granite slabs, kota Stones stone, and engineered stone surfaces — direct from quarries at best prices.',
     heroImage: 'https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&q=80&w=1600',
     accentColor: '#E8C97A',
-    subcategories: ['All', 'Granite', 'Kadappa', 'Marble', 'Sandstone'],
+    subcategories: ['All', 'Granite', 'Kota Stones', 'Marble', 'Sandstone'],
   },
   {
     slug: 'sanitary-ware',
@@ -276,11 +276,11 @@ export const PRODUCTS = [
     tags: ['parking', 'heavy duty', 'commercial', 'outdoor', 'driveway'],
   },
 
-  /* ══ GRANITE & KADAPPA ═══════════════════════════════════════════════ */
+  /* ══ GRANITE & KOTA STONES ═══════════════════════════════════════════════ */
   {
     id: 9,
     name: 'Black Galaxy Granite',
-    category: 'granite-kadappa',
+    category: 'granite-kota Stones',
     subcategory: 'Granite',
     price: '₹180 / sq.ft',
     unit: 'per sq.ft',
@@ -301,7 +301,7 @@ export const PRODUCTS = [
   {
     id: 10,
     name: 'Kashmir White Granite',
-    category: 'granite-kadappa',
+    category: 'granite-kota Stones',
     subcategory: 'Granite',
     price: '₹150 / sq.ft',
     unit: 'per sq.ft',
@@ -322,7 +322,7 @@ export const PRODUCTS = [
   {
     id: 11,
     name: 'Absolute Black Polished Granite',
-    category: 'granite-kadappa',
+    category: 'granite-kota Stones',
     subcategory: 'Granite',
     price: '₹160 / sq.ft',
     unit: 'per sq.ft',
@@ -343,7 +343,7 @@ export const PRODUCTS = [
   {
     id: 12,
     name: 'Vizag Blue Granite',
-    category: 'granite-kadappa',
+    category: 'granite-kota Stones',
     subcategory: 'Granite',
     price: '₹220 / sq.ft',
     unit: 'per sq.ft',
@@ -363,9 +363,9 @@ export const PRODUCTS = [
   },
   {
     id: 13,
-    name: 'Kadappa Black Stone',
-    category: 'granite-kadappa',
-    subcategory: 'Kadappa',
+    name: 'Kota Stones Stone',
+    category: 'granite-kota Stones',
+    subcategory: 'Kota Stones',
     price: '₹75 / sq.ft',
     unit: 'per sq.ft',
     image: '/products/IMG_2321.PNG',
@@ -375,17 +375,17 @@ export const PRODUCTS = [
       '/products/IMG_2323.PNG',
       '/products/IMG_2325.PNG',
     ],
-    description: 'Natural Kadappa black limestone from Andhra Pradesh. Ideal for flooring, staircases, and cladding. Highly durable and affordable.',
+    description: 'Natural Kota Stones black limestone from Andhra Pradesh. Ideal for flooring, staircases, and cladding. Highly durable and affordable.',
     features: ['Thickness: 18-20 mm', 'Finish: Natural/Polished', 'Origin: Kurnool, AP', 'Slip Resistant'],
     brand: 'Local Quarry',
     inStock: true,
     isPopular: false,
-    tags: ['kadappa', 'black', 'limestone', 'natural', 'affordable'],
+    tags: ['kota stones', 'black', 'limestone', 'natural', 'affordable'],
   },
   {
     id: 14,
     name: 'Brown Fantasy Granite',
-    category: 'granite-kadappa',
+    category: 'granite-kota Stones',
     subcategory: 'Granite',
     price: '₹130 / sq.ft',
     unit: 'per sq.ft',
@@ -1048,7 +1048,7 @@ export const PRODUCTS = [
   {
     id: 48,
     name: 'Royal Red Granite',
-    category: 'granite-kadappa',
+    category: 'granite-kota Stones',
     subcategory: 'Granite',
     price: '₹195 / sq.ft',
     unit: 'per sq.ft',
@@ -1069,7 +1069,7 @@ export const PRODUCTS = [
   {
     id: 49,
     name: 'Sea Wave Granite',
-    category: 'granite-kadappa',
+    category: 'granite-kota Stones',
     subcategory: 'Granite',
     price: '₹210 / sq.ft',
     unit: 'per sq.ft',

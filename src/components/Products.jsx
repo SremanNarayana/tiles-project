@@ -20,8 +20,8 @@ const CATEGORIES = [
     accent: '#22D3EE',
   },
   {
-    slug: 'granite-kadappa',
-    label: 'Granite & Kadappa',
+    slug: 'granite-kota Stones',
+    label: 'Granite & Kota Stones',
     icon: Mountain,
     desc: 'Natural Stone Slabs',
     img: graniteImg,

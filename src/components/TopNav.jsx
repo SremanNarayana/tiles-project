@@ -121,7 +121,7 @@ const TopNav = ({ activePage, setActivePage }) => {
               Sri Amman Tiles
             </span>
             <span className="text-[9px] tracking-widest font-medium" style={{ color: 'rgba(6,182,212,0.6)' }}>
-              MELUR · SINCE 2009
+              MELUR · SINCE 2011
             </span>
           </div>
         </button>
@@ -248,19 +248,7 @@ const TopNav = ({ activePage, setActivePage }) => {
             <div className="px-4 py-3 flex items-center gap-3">
               <span className="text-xs font-medium tracking-widest mr-1" style={{ color: 'rgba(184,214,238,0.35)' }}>FOLLOW US</span>
               <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-200"
-                style={{ background: 'rgba(24,119,242,0.10)', color: '#4A90D9', border: '1px solid rgba(24,119,242,0.15)' }}
-                onMouseEnter={e => { e.currentTarget.style.background = '#1877F2'; e.currentTarget.style.color = '#fff'; }}
-                onMouseLeave={e => { e.currentTarget.style.background = 'rgba(24,119,242,0.10)'; e.currentTarget.style.color = '#4A90D9'; }}
-              >
-                <FbIcon />
-              </a>
-              <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/sri_amman_tiles/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"

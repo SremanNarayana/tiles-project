@@ -36,7 +36,7 @@ const shopPhotos = [
   {
     id: 5,
     title: 'Granite & Stone Gallery',
-    caption: 'Full slab displays of natural granite and kadappa',
+    caption: 'Full slab displays of natural granite and kota Stones',
     image: '/gallery/MALA0702.jpg',
     col: 'lg:col-span-1', row: 'lg:row-span-1',
   },
