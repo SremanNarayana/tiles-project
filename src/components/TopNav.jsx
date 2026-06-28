@@ -180,7 +180,7 @@ const TopNav = ({ activePage, setActivePage }) => {
           </a>
 
           <button
-            onClick={() => handleNavClick('home', 'contact')}
+            onClick={() => handleNavClick('home', 'showroom')}
             className="btn-gold text-sm"
           >
             Visit Showroom
@@ -263,7 +263,7 @@ const TopNav = ({ activePage, setActivePage }) => {
 
             <div className="mt-3 pt-4" style={{ borderTop: '1px solid rgba(6,182,212,0.08)' }}>
               <button
-                onClick={() => handleNavClick('home', 'contact')}
+                onClick={() => handleNavClick('home', 'showroom')}
                 className="btn-gold w-full justify-center text-sm"
               >
                 Visit Showroom

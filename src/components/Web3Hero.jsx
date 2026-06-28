@@ -32,8 +32,8 @@ const Web3Hero = ({ setActivePage }) => {
   const contentY  = useTransform(scrollYProgress, [0, 0.45], ['0px', '-60px']);
   const statsOp   = useTransform(scrollYProgress, [0, 0.22], [1, 0]);
 
-  const goGallery = () => { setActivePage('gallery'); window.scrollTo({ top: 0, behavior: 'smooth' }); };
-  const goContact = () => scrollTo('#contact');
+  const goProducts = () => scrollTo('#products');
+  const goShowroom = () => scrollTo('#showroom');
   const goDown    = () => scrollTo(window.innerHeight);
 
   return (
@@ -130,7 +130,7 @@ const Web3Hero = ({ setActivePage }) => {
           className="flex flex-col sm:flex-row items-center gap-3 md:gap-4"
         >
           <motion.button
-            onClick={goGallery}
+            onClick={goProducts}
             whileHover={{ scale: 1.06, y: -3 }}
             whileTap={{ scale: 0.97 }}
             className="btn-gold text-sm md:text-base px-8 md:px-10 py-3.5 md:py-4"
@@ -139,7 +139,7 @@ const Web3Hero = ({ setActivePage }) => {
           </motion.button>
 
           <motion.button
-            onClick={goContact}
+            onClick={goShowroom}
             whileHover={{ scale: 1.04, y: -2 }}
             whileTap={{ scale: 0.97 }}
             className="flex items-center gap-2 px-8 md:px-10 py-3.5 md:py-4 rounded-full text-sm md:text-base font-semibold transition-all duration-300"

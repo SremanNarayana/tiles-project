@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import { Star, ChevronLeft, ChevronRight, Quote, ExternalLink } from 'lucide-react';
 import ScrollReveal3D from './ScrollReveal3D';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
@@ -224,6 +224,22 @@ const Reviews = () => {
           >
             <ChevronRight size={18} />
           </motion.button>
+        </div>
+
+        {/* Leave a Review Button */}
+        <div className="flex justify-center mt-12">
+          <motion.a
+            href="https://g.page/r/CcnuUttGCXoiEBM/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.97 }}
+            className="inline-flex items-center gap-2 btn-gold text-sm md:text-base px-8 md:px-10 py-3.5 md:py-4"
+          >
+            <GoogleIcon />
+            Leave a Review on Google
+            <ExternalLink size={14} />
+          </motion.a>
         </div>
       </div>
     </section>

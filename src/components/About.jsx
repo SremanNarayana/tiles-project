@@ -151,7 +151,7 @@ const About = () => (
                 family, he was instilled with the values of hard work and perseverance.
               </p>
               <p>
-                Since 2015, he has been successfully running Sri Amman Tiles across two locations, leading a team
+                Since 2011, he has been successfully running Sri Amman Tiles across two locations, leading a team
                 of 20+ skilled staff members. With extensive experience in tiles and granites across South India,
                 he has built a strong reputation for quality, trust, and customer satisfaction.
               </p>
