@@ -166,8 +166,8 @@ const Web3Hero = ({ setActivePage }) => {
       >
         {[
           { num: '15+',    label: 'Years' },
-          { num: '100+',   label: 'Designs' },
-          { num: '5,000+', label: 'Clients' },
+          { num: '1000+',   label: 'Designs' },
+          { num: '10,000+', label: 'Clients' },
         ].map((s, i) => (
           <motion.div
             key={i}

@@ -326,7 +326,7 @@ const Gallery = () => {
                 <span className="text-gold-gradient">Love It.</span>
               </h3>
               <p className="font-sans text-sm md:text-base leading-relaxed max-w-md" style={{ color: 'rgba(184,214,238,0.55)' }}>
-                Photos never capture the full experience. Come visit Sri Amman Tiles in Melur and explore 100+ tile designs, granite slabs, and complete building solutions — all under one roof.
+                Photos never capture the full experience. Come visit Sri Amman Tiles in Melur and explore 1000+ tile designs, granite slabs, and complete building solutions — all under one roof.
               </p>
             </div>
 

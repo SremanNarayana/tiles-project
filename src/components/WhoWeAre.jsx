@@ -7,9 +7,9 @@ import showroomImage from "../assets/showroom.png";
 
 const stats = [
   { number: '15+',    label: 'Years of Service' },
-  { number: '100+',   label: 'Tile Designs' },
-  { number: '1,000+', label: 'Orders Completed' },
-  { number: '5,000+', label: 'Trusted Clients' },
+  { number: '1000+',   label: 'Tile Designs' },
+  { number: '10,000+', label: 'Orders Completed' },
+  { number: '10,000+', label: 'Trusted Clients' },
 ];
 
 const highlights = [
@@ -55,7 +55,7 @@ const WhoWeAre = () => (
                   style={{ background: 'rgba(2,12,27,0.95)', border: '1px solid rgba(6,182,212,0.15)' }}>
                   <div className="absolute top-0 left-6 right-6 h-px" style={{ background: 'linear-gradient(90deg, transparent, rgba(6,182,212,0.4), transparent)' }} />
                   <p className="font-display text-base font-semibold" style={{ color: '#ffffff' }}>SRI AMMAN TILES</p>
-                  <p className="text-xs mt-0.5 font-sans" style={{ color: 'rgba(6,182,212,0.6)' }}>Melur, Tamil Nadu – Est. 2009</p>
+                  <p className="text-xs mt-0.5 font-sans" style={{ color: 'rgba(6,182,212,0.6)' }}>Melur, Tamil Nadu – Est. 2011</p>
                 </div>
               </div>
             </TiltCard>

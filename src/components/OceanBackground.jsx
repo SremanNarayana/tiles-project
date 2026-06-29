@@ -8,7 +8,7 @@
 const OceanBackground = () => (
   <div style={{ position: 'fixed', inset: 0, zIndex: 0, pointerEvents: 'none', overflow: 'hidden' }}>
     <video
-      style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+      style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(1.12)' }}
       poster="/ocean-bg.jpg"
       autoPlay
       loop
@@ -25,19 +25,19 @@ const OceanBackground = () => (
     {/* Subtle dark vignette — keeps section text readable */}
     <div style={{
       position: 'absolute', inset: 0,
-      background: 'radial-gradient(ellipse 110% 100% at 50% 50%, rgba(1,8,16,0.05) 0%, rgba(1,8,16,0.48) 100%)',
+      background: 'radial-gradient(ellipse 110% 100% at 50% 50%, rgba(1,8,16,0.04) 0%, rgba(1,8,16,0.40) 100%)',
     }} />
 
     {/* Top darken — navbar contrast */}
     <div style={{
       position: 'absolute', top: 0, left: 0, right: 0, height: '200px',
-      background: 'linear-gradient(180deg, rgba(1,8,16,0.70) 0%, transparent 100%)',
+      background: 'linear-gradient(180deg, rgba(1,8,16,0.60) 0%, transparent 100%)',
     }} />
 
     {/* Cool blue-dark tint to blend with the site palette */}
     <div style={{
       position: 'absolute', inset: 0,
-      background: 'rgba(1,8,20,0.18)',
+      background: 'rgba(1,8,20,0.13)',
       mixBlendMode: 'multiply',
     }} />
   </div>

@@ -6,7 +6,7 @@ import TiltCard from './TiltCard';
 const features = [
   { title: 'Premium Quality',    subtitle: 'World-class materials',   icon: Gem },
   { title: 'Affordable Pricing', subtitle: 'Direct factory rates',    icon: Tags },
-  { title: '100+ Designs',       subtitle: 'Exclusive collections',   icon: LayoutGrid },
+  { title: '1000+ Designs',       subtitle: 'Exclusive collections',   icon: LayoutGrid },
   { title: 'Expert Assistance',  subtitle: 'Dedicated support team',  icon: Headset },
 ];
 
