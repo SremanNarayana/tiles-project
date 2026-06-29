@@ -142,7 +142,12 @@ const Reviews = () => {
               style={{ transformPerspective: 1200, willChange: 'transform, opacity' }}
               className="w-full"
             >
-              <div
+              <motion.a
+                href="https://g.page/r/CcnuUttGCXoiEBM/review"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.01, y: -2 }}
+                whileTap={{ scale: 0.99 }}
                 className="rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-start relative overflow-hidden"
                 style={{
                   background: 'rgba(4,18,40,0.95)',
@@ -180,7 +185,7 @@ const Reviews = () => {
                     <span className="text-xs font-medium" style={{ color: 'rgba(6,182,212,0.5)' }}>Google Review</span>
                   </div>
                 </div>
-              </div>
+              </motion.a>
             </motion.div>
           </AnimatePresence>
         </div>
